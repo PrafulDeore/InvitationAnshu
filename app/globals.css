@@ -1,13 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap");
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
-
+@font-face {
+  font-family: "DancingScript";
+  src: url("../public/fonts/dancingScrit/DancingScript-VariableFont_wght.ttf"),
+    url("../public/fonts/dancingScrit/DancingScript-VariableFont_wght.woff"),
+    url("../public/fonts/dancingScrit/DancingScript-VariableFont_wght.eot"),
+    url("../public/fonts/dancingScrit/DancingScript-VariableFont_wght.woff2"),
+    url("../public/fonts/dancingScrit/DancingScript-VariableFont_wght.svg");
+}
+@font-face {
+  font-family: "ExoFont";
+  src: url("../public/fonts/Exo/Exo2-Italic-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "palyfair";
+  src: url("../public/fonts/Playfair/PlayfairDisplay-Italic-VariableFont_wght.ttf");
+}
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -24,4 +39,8 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+.marry {
+  border: 1px solid red;
+  font-family: "Dancing Script", cursive;
 }

@@ -9,10 +9,15 @@ import AOS from 'aos'
 // @ts-ignore
 import BannerImage1 from '../public/Images/BannerImage.jpeg'
 // @ts-ignore
-// import Image1 from '../public/images/img1.JPG'
+import BannerImage2 from '../public/Images/banner one.png'
 // @ts-ignore
 import Song from '../public/Music/marathiSong1.wav'
-import CountdownTimer from './Componets/time'
+import { SingleCard } from './Componets/singleCard'
+import { CountdownTimer } from './Componets/Time/time'
+import flowerBG from '../public/Images/flowerBG.png'
+
+
+
 
 const Home = () => {
   useEffect(() => {
@@ -23,39 +28,39 @@ const Home = () => {
     <div className="">
       <div className="relative flex flex-col justify-center items-center">
         {/* Sticky Image */}
-        <div className="w-full h-auto fixed top-0 z-[-1] before:w-full before:h-full before:bg-website-black before:opacity-[0.5] before:z-10 before:top-0 before:left-0 before:absolute">
+        <div className="w-full h-[850px] border fixed top-0 z-[-1] before:w-full before:h-full before:bg-website-black before:opacity-[0.5] before:z-10 before:top-0 before:left-0 before:absolute">
           <Image
-            src={BannerImage1}
+            src={BannerImage2}
             objectFit="cover"
             alt="Picture of the author"
-            className="w-full "
+            className="w-full"
           />
         </div>
 
-        {/* Content on top of the Image */}
-        <div className="absolute top-[350px] flex flex-col justify-center items-center z-[1] w-full">
+        {/* //* Content on top of the Image */}
+        <div className="absolute top-[350px] xsMax:top-[220px] flex flex-col justify-center items-center z-[1] w-full">
           <div
-            className="flex flex-col justify-center items-center"
+            className="flex flex-col justify-center items-center "
             data-aos="flip-up"
             data-aos-offset="200"
             data-aos-easing="ease-in-sine"
             data-aos-duration="600"
           >
-            <p className="text-[40px]  text-white font-Impact tracking-[0.8px]">
+            <p className="!font-dancing text-[40px] text-white  tracking-[0.8px] text-center xsMax:text-[30px] ">
               We are getting married
             </p>
-            <p className="text-[52px]  text-white font-MontserratSemiBold">
+            <p className="text-[52px] xsMax:text-[42px] text-white font-ExoFont font-semibold">
               Anjor & Praful
             </p>
-            <p className="text-[28px]  text-white font-MontserratSemiBold">
+            <p className="text-[28px] xsMax:text-[28px] text-white font-dancing font-extrabold">
               Save The Date
             </p>
-            <p className="text-[24px]  text-white font-MontserratSemiBold">
-              17-09-2023
+            <p className="text-[24px] xsMax:text-[20px] text-white font-dancing font-extrabold">
+              04-02-2024
             </p>
           </div>
-          {/* Audio Element */}
 
+          {/* //* Audio Element */}
           <div
             className="flex flex-col justify-center items-center border mt-[180px] w-full "
             data-aos="zoom-in-up"
@@ -69,16 +74,16 @@ const Home = () => {
               </audio>
             </div>
             {/* //*Section -1 */}
-            <div className="mt-[200px] flex w-full bg-website-white">
+            <div className="mt-[200px] flex xsMax:flex-col w-full bg-website-white xsMax:flex xsMax:justify-center xsMax:items-center">
               {/* //*left */}
               <div
-                className="w-[50%] border"
+                className="w-[90%] border"
                 data-aos="fade-left"
                 data-aos-offset="200"
                 data-aos-easing="ease-in-sine"
                 data-aos-duration="600"
               >
-                <div className="max-w-[95%] w-full">
+                <div className=" w-full  xsMax:my-[20px] ">
                   <Image
                     src={BannerImage1}
                     objectFit="cover"
@@ -89,20 +94,40 @@ const Home = () => {
               </div>
               {/* //*right */}
               <div
-                className="w-[50%] pl-[50px]"
+                className="w-[50%]  xsMax:w-[90%] pl-[50px] xsMax:pl-0 xsMax:mt-[55px]"
                 data-aos="fade-right"
                 data-aos-offset="200"
                 data-aos-easing="ease-in-sine"
                 data-aos-duration="600"
               >
-                <p className="text-[65px] font-industryBold text-left text-website-navy">
-                  BRIDE & GROOM
-                </p>
-                <p className="text-[35px] font-industryDemi mt-[20px] max-w-[80%] w-full text-website-darkBlue">
-                  Join Anjor & Praful On The 4th of February to Celebrate Their
-                  Union
-                </p>
-                <p className="text-[25px] font-abolitionOblique text-website-darkBlue border-l-[2px] border-website-red mt-[50px] pl-[25px] max-w-[80%] w-full">
+                <div className='relative w-full flex justify-center '>
+                  <div className='absolute top-[-35px] z-[-1]  w-[60%] flex justify-center items-center '>
+                    <Image
+                      src={flowerBG}
+                      objectFit="cover"
+                      alt="Picture of the author"
+                      className="w-full"
+                    />
+                  </div>
+                  <div className='z-10 '>
+
+                    <p className="text-[65px]  text-left text-website-red
+                 xsMax:text-[35px]  xsMax:text-center font-palyfair font-medium mb-[40px]">
+                      BRIDE & GROOM
+                    </p>
+                    <p className="text-[35px] font-palyfair mt-[20px] max-w-[80%] w-full text-website-darkBlue
+                xsMax:text-center xsMax:max-w-full  xsMax:text-[25px]
+                ">
+                      Join Anjor & Praful On The 4th of February to Celebrate Their
+                      Union
+                    </p>
+                  </div>
+                </div>
+
+
+
+                <p className="text-[25px] font-abolitionOblique text-website-darkBlue border-l-[2px] border-website-red mt-[50px] pl-[25px]  xsMax:pl-[15px] max-w-[80%] w-full
+                xsMax:text-center xsMax:max-w-full xsMax:mt-[25px] font-ExoFont xsMax:text-[20px]                ">
                   Love in marriage is the beautiful melody that two hearts
                   compose together, a symphony of shared dreams, whispered
                   promises, and the harmonious dance of souls choosing each
@@ -112,18 +137,31 @@ const Home = () => {
             </div>
 
             {/* //*Section -2 */}
-            <div className="pt-[200px] pb-[50px] flex flex-col justify-center items-center w-full bg-website-white ">
+            <div className="pt-[200px] xsMax:pt-[100px] pb-[50px] flex flex-col justify-center items-center w-full bg-website-white ">
+              <div className='relative w-full flex justify-center '>
+                <div className='absolute top-[-35px] z-[9]  w-[40%] flex justify-center items-center '>
+                  <Image
+                    src={flowerBG}
+                    objectFit="cover"
+                    alt="Picture of the author"
+                    className="w-full"
+                  />
+                </div>
+
+                <p
+                  data-aos="fade-down"
+                  data-aos-offset="200"
+                  data-aos-easing="ease-in-sine"
+                  data-aos-duration="600"
+                  className='z-[10] text-[65px]  text-left text-website-red xsMax:text-[35px]  xsMax:text-center font-palyfair font-medium mb-[40px]'
+                >
+                  OUR LOVE STORY
+                </p>
+              </div>
+
               <p
-                className="text-website-red font-bold font-abolitionOblique   font text-[55px] tracking-[1px]"
-                data-aos="fade-down"
-                data-aos-offset="200"
-                data-aos-easing="ease-in-sine"
-                data-aos-duration="600"
-              >
-                OUR LOVE STORY
-              </p>
-              <p
-                className="text-[25px] text-website-lightBlue mt-[70px] px-[250px] text-center font-abolitionOblique"
+                className="text-[25px] font-abolitionOblique text-website-darkBlue mt-[50px] pl-[25px]  xsMax:pl-[15px] max-w-[80%] w-full
+xsMax:text-center xsMax:max-w-full xsMax:mt-[25px] font-ExoFont xsMax:text-[20px]"
                 data-aos="fade-up"
                 data-aos-offset="100"
                 data-aos-easing="ease-in-sine"
@@ -141,7 +179,44 @@ const Home = () => {
                 of our journey.
               </p>
             </div>
-            <CountdownTimer />
+
+            {/* //*Section -2 */}
+            <div className="pt-[140px] pb-[200px] xsMax:pt-[40px] xsMax:pb-[40px] flex xsMax:flex-col justify-center items-center w-full bg-[#f8e4df] border gap-x-[40px]"            >
+              {/* //&Photo-1 */}
+              <div
+                data-aos="fade-right"
+                data-aos-offset="500"
+                data-aos-duration="600"
+              >
+
+                <SingleCard heading='1st Date' date="Feb 20, 2016" />
+              </div>
+
+              {/* //&Photo-2 */}
+              <div
+                data-aos="fade-up"
+                data-aos-offset="500"
+                data-aos-duration="600"
+              >
+                <SingleCard heading='We Fall in Love' date="July 20, 2020" />
+              </div>
+
+              {/* //&Photo-3 */}
+              <div
+                data-aos="fade-left"
+                data-aos-offset="500"
+                data-aos-duration="600">
+                <SingleCard heading='Engaged' date="July 20, 2020" />
+              </div>
+            </div>
+
+
+
+            {/* //*CountDown */}
+            <div className='py-[150px] bg-website-white w-full'>
+              <p className='text-[52px] text-website-lightBlue text-center mb-[70px]'>Day's Remaining</p>
+              <CountdownTimer />
+            </div>
           </div>
         </div>
       </div>

@@ -1,0 +1,21 @@
+.App {
+  display: flex;
+  justify-content: space-around;
+  font-family: sans-serif;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.time {
+  font-size: 42px;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  text-align: center;
+}
+.time-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+}
