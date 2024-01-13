@@ -16,8 +16,9 @@ import { SingleCard } from './Componets/singleCard'
 import { CountdownTimer } from './Componets/Time/time'
 import flowerBG from '../public/Images/flowerBG.png'
 import FirstImage from '../public/Images/firstDate.jpg'
+import SimpleImageSlider from 'react-simple-image-slider/dist/index';
 
-
+import Image1 from '../public/Images/sliderimages/img1.png'
 
 
 const Home = () => {
@@ -26,8 +27,16 @@ const Home = () => {
     window.scrollTo(0, 0)
   }, [])
 
+  const images = [
+    { url: '/Images/sliderimages/img1.png' },
+    { url: '/Images/sliderimages/img2.png' },
+    { url: '/Images/sliderimages/img3.png' },
+    { url: '/Images/sliderimages/img4.png' },
+    { url: '/Images/sliderimages/img5.png' },
+    { url: '/Images/sliderimages/img6.png' },
 
-  
+  ]
+
 
   return (
     <div className="">
@@ -89,12 +98,18 @@ const Home = () => {
                 data-aos-easing="ease-in-sine"
                 data-aos-duration="600"
               >
-                <div className=" w-full  xsMax:my-[20px] ">
-                  <Image
-                    src={BannerImage1}
-                    objectFit="cover"
-                    alt="Picture of the author"
-                    className="w-full "
+                <div className=" w-full  xsMax:my-[20px]">
+                  <SimpleImageSlider
+                    width={'100%'}
+                    height={250}
+                    images={images}
+                    showBullets={true}
+                    showNavs={false}
+                    autoPlay={true}
+                    autoPlayDelay={3.5}
+                    loop={true}
+                    slideDuration={1.9}
+                    navStyle={1}
                   />
                 </div>
               </div>
@@ -108,12 +123,15 @@ const Home = () => {
               >
                 <div className='relative w-full flex justify-center '>
                   <div className='absolute top-[-35px] z-[-1]  w-[60%] flex justify-center items-center '>
-                    <Image
-                      src={flowerBG}
-                      objectFit="cover"
-                      alt="Picture of the author"
-                      className="w-full"
-                    />
+                    <div>
+
+                      <Image
+                        src={flowerBG}
+                        objectFit="cover"
+                        alt="Picture of the author"
+                        className="w-full"
+                      />
+                    </div>
                   </div>
                   <div className='z-10 '>
 
@@ -124,7 +142,7 @@ const Home = () => {
                     <p className="text-[35px] font-palyfair mt-[20px] max-w-[80%] w-full text-website-darkBlue
                 xsMax:text-center xsMax:max-w-full  xsMax:text-[25px]
                 ">
-                      Join Anjor & Praful On The 4th of February to Celebrate Their
+                      Join us On The 4th of February to Celebrate Their
                       Union
                     </p>
                   </div>
@@ -206,7 +224,7 @@ xsMax:text-center xsMax:max-w-full xsMax:mt-[25px] font-ExoFont xsMax:text-[20px
                 data-aos-duration="600"
                 className='mt-[90px]'
               >
-                <SingleCard heading='We Fall in Love' date="July 20, 2020" />
+                <SingleCard heading='We Fell in Love' date="July 20, 2020" />
               </div>
 
               {/* //&Photo-3 */}
@@ -223,8 +241,10 @@ xsMax:text-center xsMax:max-w-full xsMax:mt-[25px] font-ExoFont xsMax:text-[20px
 
 
             {/* //*CountDown */}
-            <div className='py-[150px] bg-website-white w-full'>
-              <p className='text-[52px] text-website-lightBlue text-center mb-[70px]'>Day's Remaining</p>
+            <div className='py-[150px] xsMax:py-[70px] bg-website-white w-full'>
+              <p className="text-[65px]  text-left text-website-red xsMax:text-[35px]  xsMax:text-center font-palyfair font-medium mb-[40px]">
+                Day's Remaining
+              </p>
               <CountdownTimer />
             </div>
           </div>

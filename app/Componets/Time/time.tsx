@@ -44,12 +44,8 @@ const getTimeDays = (time: number) => (time / daySeconds) | 0;
 export const CountdownTimer = () => {
 
   useEffect(() => {
-    // Check if running on the client side
-    if (typeof window !== 'undefined') {
-      // Access AOS library when on the client side
-      const AOS = require('aos');
-      AOS.init();
-    }
+    const AOS = require('aos');
+    AOS.init();
   }, []);
 
   const stratTime = Date.now() / 1000; // use UNIX timestamp in seconds
@@ -60,7 +56,7 @@ export const CountdownTimer = () => {
   const daysDuration = days * daySeconds;
 
   return (
-    <div className="border flex xsMax:flex-col border-website-darkBlue justify-center gap-x-[50px]">
+    <div className="border flex xsMax:flex-col xsMax:items-center xsMax:gap-y-[15px] border-website-darkBlue justify-center gap-x-[50px]">
 
 
       <CountdownCircleTimer
@@ -114,11 +110,11 @@ export const CountdownTimer = () => {
 
       {/* <CountdownCircleTimer
         {...timerProps}
-        colors="#218380"
+        colors="#3C90C6" // Choose a color for seconds
         duration={minuteSeconds}
         initialRemainingTime={remainingTime % minuteSeconds}
         onComplete={(totalElapsedTime) => ({
-          shouldRepeat: remainingTime - totalElapsedTime > 0,
+          shouldRepeat: remainingTime - totalElapsedTime > millisecond,
         })}
       >
         {({ elapsedTime, color }) => (
@@ -127,23 +123,6 @@ export const CountdownTimer = () => {
           </span>
         )}
       </CountdownCircleTimer> */}
-
-      {/* <CountdownCircleTimer
-        {...timerProps}
-        colors="#698486"
-        duration={millisecond}
-        initialRemainingTime={remainingTime % millisecond}
-        onComplete={(totalElapsedTime) => ({
-          shouldRepeat: remainingTime - totalElapsedTime > 0,
-        })}
-      >
-        {({ elapsedTime, color }) => (
-          <span style={{ color }}>
-            {renderTime({ dimension: "Miliseconds", time: getTimeMilliseconds(elapsedTime) })}
-          </span>
-        )}
-      </CountdownCircleTimer> */}
-
     </div>
   );
 };
