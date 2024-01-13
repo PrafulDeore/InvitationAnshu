@@ -2,19 +2,20 @@
 /* eslint-disable */
 
 import Image from 'next/image'
-import { useEffect } from 'react'
+import { useEffect, useRef } from 'react'
 import 'aos/dist/aos.css'
 // @ts-ignore
 import AOS from 'aos'
 // @ts-ignore
 import BannerImage1 from '../public/Images/BannerImage.jpeg'
 // @ts-ignore
-import BannerImage2 from '../public/Images/banner one.png'
+import BannerImage2 from '../public/Images/banerTwo.JPEG'
 // @ts-ignore
 import Song from '../public/Music/marathiSong1.wav'
 import { SingleCard } from './Componets/singleCard'
 import { CountdownTimer } from './Componets/Time/time'
 import flowerBG from '../public/Images/flowerBG.png'
+import FirstImage from '../public/Images/firstDate.jpg'
 
 
 
@@ -24,21 +25,26 @@ const Home = () => {
     AOS.init()
     window.scrollTo(0, 0)
   }, [])
+
+
+  
+
   return (
     <div className="">
       <div className="relative flex flex-col justify-center items-center">
         {/* Sticky Image */}
-        <div className="w-full h-[850px] border fixed top-0 z-[-1] before:w-full before:h-full before:bg-website-black before:opacity-[0.5] before:z-10 before:top-0 before:left-0 before:absolute">
+        <div className="w-full h-[850px] fixed top-0 z-[-1] before:w-full before:h-full before:bg-website-black before:opacity-[0.5] before:z-10 before:top-0 before:left-0 before:absolute">
           <Image
             src={BannerImage2}
             objectFit="cover"
             alt="Picture of the author"
             className="w-full"
+            fill={true}
           />
         </div>
 
         {/* //* Content on top of the Image */}
-        <div className="absolute top-[350px] xsMax:top-[220px] flex flex-col justify-center items-center z-[1] w-full overflow-hidden">
+        <div className="absolute top-[350px] xsMax:top-[210px] flex flex-col justify-center items-center z-[1] w-full overflow-hidden">
           <div
             className="flex flex-col justify-center items-center "
             data-aos="flip-up"
@@ -62,13 +68,13 @@ const Home = () => {
 
           {/* //* Audio Element */}
           <div
-            className="flex flex-col justify-center items-center border mt-[180px] w-full "
+            className="flex flex-col justify-center items-center mt-[180px] xsMax:mt-[250px] w-full "
             data-aos="zoom-in-up"
             data-aos-offset="200"
             data-aos-duration="600"
           >
             <div className="w-full flex justify-center items-center">
-              <audio controls className="">
+              <audio autoPlay controls className="">
                 <source src={Song} type="audio/wav" />
                 Your browser does not support the audio tag.
               </audio>
@@ -77,7 +83,7 @@ const Home = () => {
             <div className="mt-[200px] flex xsMax:flex-col w-full bg-website-white xsMax:flex xsMax:justify-center xsMax:items-center">
               {/* //*left */}
               <div
-                className="w-[90%] border"
+                className="w-[90%] "
                 data-aos="fade-left"
                 data-aos-offset="200"
                 data-aos-easing="ease-in-sine"
@@ -187,10 +193,10 @@ xsMax:text-center xsMax:max-w-full xsMax:mt-[25px] font-ExoFont xsMax:text-[20px
                 data-aos="fade-up"
                 data-aos-offset="500"
                 data-aos-duration="600"
-                className='border border-website-red'
+                className=''
               >
 
-                <SingleCard heading='1st Date' date="Feb 20, 2016" />
+                <SingleCard heading='1st Date' date="Feb 20, 2016" image={FirstImage} />
               </div>
 
               {/* //&Photo-2 */}
@@ -198,6 +204,7 @@ xsMax:text-center xsMax:max-w-full xsMax:mt-[25px] font-ExoFont xsMax:text-[20px
                 data-aos="fade-up"
                 data-aos-offset="500"
                 data-aos-duration="600"
+                className='mt-[90px]'
               >
                 <SingleCard heading='We Fall in Love' date="July 20, 2020" />
               </div>
@@ -206,7 +213,9 @@ xsMax:text-center xsMax:max-w-full xsMax:mt-[25px] font-ExoFont xsMax:text-[20px
               <div
                 data-aos="fade-up"
                 data-aos-offset="500"
-                data-aos-duration="600">
+                data-aos-duration="600"
+                className='mt-[70px] mb-[50px]'
+              >
                 <SingleCard heading='Engaged' date="July 20, 2020" />
               </div>
             </div>
