@@ -38,7 +38,7 @@ const Home = () => {
         </div>
 
         {/* //* Content on top of the Image */}
-        <div className="absolute top-[350px] xsMax:top-[220px] flex flex-col justify-center items-center z-[1] w-full">
+        <div className="absolute top-[350px] xsMax:top-[220px] flex flex-col justify-center items-center z-[1] w-full overflow-hidden">
           <div
             className="flex flex-col justify-center items-center "
             data-aos="flip-up"
@@ -184,9 +184,10 @@ xsMax:text-center xsMax:max-w-full xsMax:mt-[25px] font-ExoFont xsMax:text-[20px
             <div className="pt-[140px] pb-[200px] xsMax:pt-[40px] xsMax:pb-[40px] flex xsMax:flex-col justify-center items-center w-full bg-[#f8e4df] border gap-x-[40px]"            >
               {/* //&Photo-1 */}
               <div
-                data-aos="fade-right"
+                data-aos="fade-up"
                 data-aos-offset="500"
                 data-aos-duration="600"
+                className='border border-website-red'
               >
 
                 <SingleCard heading='1st Date' date="Feb 20, 2016" />
@@ -203,7 +204,7 @@ xsMax:text-center xsMax:max-w-full xsMax:mt-[25px] font-ExoFont xsMax:text-[20px
 
               {/* //&Photo-3 */}
               <div
-                data-aos="fade-left"
+                data-aos="fade-up"
                 data-aos-offset="500"
                 data-aos-duration="600">
                 <SingleCard heading='Engaged' date="July 20, 2020" />
