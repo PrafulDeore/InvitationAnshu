@@ -56,15 +56,12 @@ export const CountdownTimer = () => {
   const daysDuration = days * daySeconds;
 
   return (
-    <div className="border flex xsMax:flex-col xsMax:items-center xsMax:gap-y-[15px] border-website-darkBlue justify-center gap-x-[50px]">
-
-
+    <div className=" flex xsMax:flex-col xsMax:items-center xsMax:gap-y-[15px] border-website-darkBlue justify-center gap-x-[50px]">
       <CountdownCircleTimer
         {...timerProps}
         colors="#7E2E84"
         duration={daysDuration}
         initialRemainingTime={remainingTime}
-
       >
         {({ elapsedTime, color }) => (
           <span style={{ color }} >

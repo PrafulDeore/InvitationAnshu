@@ -15,11 +15,19 @@ import Song from '../public/Music/marathiSong1.wav'
 import { SingleCard } from './Componets/singleCard'
 import { CountdownTimer } from './Componets/Time/time'
 import flowerBG from '../public/Images/flowerBG.png'
-import FirstImage from '../public/Images/firstDate.jpg'
-import SimpleImageSlider from 'react-simple-image-slider/dist/index';
-
-import Image1 from '../public/Images/sliderimages/img1.png'
-
+import FirstImage from '../public/Images/1st date.jpg'
+import fellInLove from '../public/Images/firstDate.jpg'
+import SimpleImageSlider from 'react-simple-image-slider/dist/index'
+import FirstOuting from '../public/Images/firstOuting.jpeg'
+import FirstInstaPost from '../public/Images/firstInstaPost.jpeg'
+import TimeTogether from '../public/Images/e.jpeg'
+import Bhandaradara from '../public/Images/bhandardara.jpeg'
+// @ts-ignore
+import BackWaters from '../public/Images/backWaters.JPEG'
+// @ts-ignore
+import BauliDam from '../public/Images/bauliDam.JPEG'
+import Enga from '../public/Images/e56.jpeg'
+import ShubhVivah from '../public/Images/shubhaVivah.jpg'
 
 const Home = () => {
   useEffect(() => {
@@ -149,7 +157,6 @@ const Home = () => {
                 </div>
 
 
-
                 <p className="text-[25px] font-abolitionOblique text-website-darkBlue border-l-[2px] border-website-red mt-[50px] pl-[25px]  xsMax:pl-[15px] max-w-[80%] w-full
                 xsMax:text-center xsMax:max-w-full xsMax:mt-[25px] font-ExoFont xsMax:text-[20px]                ">
                   Love in marriage is the beautiful melody that two hearts
@@ -204,8 +211,8 @@ xsMax:text-center xsMax:max-w-full xsMax:mt-[25px] font-ExoFont xsMax:text-[20px
               </p>
             </div>
 
-            {/* //*Section -2 */}
-            <div className="pt-[140px] pb-[200px] xsMax:pt-[40px] xsMax:pb-[40px] flex xsMax:flex-col justify-center items-center w-full bg-[#f8e4df] border gap-x-[40px]"            >
+            {/* //*Section -3 */}
+            <div className="pt-[140px] pb-[200px] xsMax:pt-[40px] xsMax:pb-[40px] flex xsMax:flex-col justify-center items-center w-full bg-[#fdf7f6] border gap-x-[40px]"            >
               {/* //&Photo-1 */}
               <div
                 data-aos="fade-up"
@@ -224,28 +231,111 @@ xsMax:text-center xsMax:max-w-full xsMax:mt-[25px] font-ExoFont xsMax:text-[20px
                 data-aos-duration="600"
                 className='mt-[90px]'
               >
-                <SingleCard heading='We Fell in Love' date="July 20, 2020" />
+                <SingleCard heading='1st Outing' date="April 21, 2016" image={fellInLove} />
               </div>
 
               {/* //&Photo-3 */}
+
               <div
                 data-aos="fade-up"
                 data-aos-offset="500"
                 data-aos-duration="600"
                 className='mt-[70px] mb-[50px]'
               >
-                <SingleCard heading='Engaged' date="July 20, 2020" />
+                <SingleCard heading='Treaking Together' date="July 09, 2017" image={FirstOuting} />
               </div>
+
+              {/* //&Photo-4 */}
+              <div
+                data-aos="fade-up"
+                data-aos-offset="500"
+                data-aos-duration="600"
+                className='mt-[70px] mb-[50px]'
+              >
+                <SingleCard heading='1st Insta post' date="Aug 12, 2017" image={FirstInstaPost} />
+              </div>
+
+              {/* //&Photo-5 */}
+              <div
+                data-aos="fade-up"
+                data-aos-offset="500"
+                data-aos-duration="600"
+                className='mt-[70px] mb-[50px]'
+              >
+                <SingleCard heading='Found Peace Together' date="June 01, 2018" image={TimeTogether} />
+              </div>
+
+              {/* //&Photo-6 */}
+              <div
+                data-aos="fade-up"
+                data-aos-offset="500"
+                data-aos-duration="600"
+                className='mt-[70px] mb-[50px]'
+              >
+                <SingleCard heading='Backwaters' date="July 06, 2018" image={BackWaters} />
+              </div>
+              {/* //&Photo-7 */}
+              <div
+                data-aos="fade-up"
+                data-aos-offset="500"
+                data-aos-duration="600"
+                className='mt-[70px] mb-[50px]'
+              >
+                <SingleCard heading='And Twinning Never looked so cute' date="Jan 21, 2021" image={Bhandaradara} />
+              </div>
+
+              {/* //&Photo-8 */}
+
+              <div
+                data-aos="fade-up"
+                data-aos-offset="500"
+                data-aos-duration="600"
+                className='mt-[70px] mb-[50px]'
+              >
+                <SingleCard heading='Spent our Vacation Together' date="Aug 13, 2022" image={BauliDam} />
+              </div>
+
+              {/* //&Video-9 */}
+              <div
+                data-aos="fade-up"
+                data-aos-offset="500"
+                data-aos-duration="600"
+                className='mt-[70px] mb-[50px]'
+              >
+                <SingleCard heading='I Asked & She said yes' date="Jan 01, 2023" video={true} />
+
+              </div>
+              {/* //&Photo-10 */}
+
+              <div
+                data-aos="fade-up"
+                data-aos-offset="500"
+                data-aos-duration="600"
+                className='mt-[70px] mb-[50px]'
+              >
+                <SingleCard heading='Yes! We got Promoted as... GF BF -> Fiancée' date="Aug 13, 2022" image={Enga} />
+              </div>
+
             </div>
 
 
-
             {/* //*CountDown */}
-            <div className='py-[150px] xsMax:py-[70px] bg-website-white w-full'>
-              <p className="text-[65px]  text-left text-website-red xsMax:text-[35px]  xsMax:text-center font-palyfair font-medium mb-[40px]">
-                Day's Remaining
-              </p>
-              <CountdownTimer />
+            <div className='py-[150px] xsMax:py-[70px] bg-website-white w-full relative'>
+              <div className='z-20 absolute w-full '>
+                <p className="text-[65px]   text-left text-website-SelectiveYellow xsMax:text-[35px]  xsMax:text-center font-palyfair font-medium mb-[40px]">
+                  Day's Remaining
+                </p>
+                <CountdownTimer />
+              </div>
+              <div className="w-full  h-[850px] z-[1] before:w-full before:h-full before:bg-website-black before:opacity-[0.8] before:z-10 before:top-0 before:left-0 before:absolute">
+                <Image
+                  src={ShubhVivah}
+                  objectFit="cover"
+                  alt="Picture of the author"
+                  className="w-full"
+                  fill={true}
+                />
+              </div>
             </div>
           </div>
         </div>
