@@ -40,12 +40,10 @@ export const SingleCard = ({ heading = 'We Fall in Love', date = "July 20, 2020"
                                 alt="Picture of the author"
                                 className="w-full rounded-full h-full"
                             /> :
-                            <video autoPlay controls loop style={{width:'240px', height:'240px', objectFit: 'cover',borderRadius:'100%' }}  >
+                            <video autoPlay controls muted loop style={{width:'240px', height:'240px', objectFit: 'cover',borderRadius:'100%' }}  >
                                 <source src="/video/oneVideo.mp4" />
                             </video>
-
                     }
-
                 </div>
             </div>
         </div>

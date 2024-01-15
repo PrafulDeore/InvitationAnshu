@@ -11,7 +11,7 @@ import BannerImage1 from '../public/Images/BannerImage.jpeg'
 // @ts-ignore
 import BannerImage2 from '../public/Images/banerTwo.JPEG'
 // @ts-ignore
-import Song from '../public/Music/marathiSong1.wav'
+import Song from '../public/Music/navriNavra.wav'
 import { SingleCard } from './Componets/singleCard'
 import { CountdownTimer } from './Componets/Time/time'
 import flowerBG from '../public/Images/flowerBG.png'
@@ -150,7 +150,7 @@ const Home = () => {
                     <p className="text-[35px] font-palyfair mt-[20px] max-w-[80%] w-full text-website-darkBlue
                 xsMax:text-center xsMax:max-w-full  xsMax:text-[25px]
                 ">
-                      Join us On The 4th of February to Celebrate Their
+                      Join us On The 4th of February to Celebrate Our
                       Union
                     </p>
                   </div>
@@ -262,7 +262,7 @@ xsMax:text-center xsMax:max-w-full xsMax:mt-[25px] font-ExoFont xsMax:text-[20px
                 data-aos-duration="600"
                 className='mt-[70px] mb-[50px]'
               >
-                <SingleCard heading='Found Peace Together' date="June 01, 2018" image={TimeTogether} />
+                <SingleCard heading='' date="June 01, 2018" image={TimeTogether} />
               </div>
 
               {/* //&Photo-6 */}
@@ -272,7 +272,7 @@ xsMax:text-center xsMax:max-w-full xsMax:mt-[25px] font-ExoFont xsMax:text-[20px
                 data-aos-duration="600"
                 className='mt-[70px] mb-[50px]'
               >
-                <SingleCard heading='Backwaters' date="July 06, 2018" image={BackWaters} />
+                <SingleCard heading='Found Peace Together' date="July 06, 2018" image={BackWaters} />
               </div>
               {/* //&Photo-7 */}
               <div
@@ -313,7 +313,7 @@ xsMax:text-center xsMax:max-w-full xsMax:mt-[25px] font-ExoFont xsMax:text-[20px
                 data-aos-duration="600"
                 className='mt-[70px] mb-[50px]'
               >
-                <SingleCard heading='Yes! We got Promoted as... GF BF -> Fiancée' date="Aug 13, 2022" image={Enga} />
+                <SingleCard heading='Yes! We got Promoted as... GF BF -> Fiancée' date="Nov 18, 2023" image={Enga} />
               </div>
 
             </div>
