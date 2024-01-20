@@ -101,7 +101,8 @@ module.exports = {
     fontFamily: {
       dancing: ["DancingScript"],
       ExoFont: ["ExoFont"],
-      palyfair:['palyfair']
+      palyfair:['palyfair'],
+      sail:['sail']
     },
     backgroundImage: {
       texture: "url('../public/images/texture.svg')",

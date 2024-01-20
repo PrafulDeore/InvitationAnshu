@@ -23,6 +23,10 @@
   font-family: "palyfair";
   src: url("../public/fonts/Playfair/PlayfairDisplay-Italic-VariableFont_wght.ttf");
 }
+@font-face {
+  font-family: "sail";
+  src: url("../public/fonts/Sail/Sail-Regular.ttf");
+}
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;

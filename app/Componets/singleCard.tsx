@@ -13,9 +13,9 @@ export const SingleCard = ({ heading = 'We Fall in Love', date = "July 20, 2020"
 
     return (
         <div className="max-w-[400px] xsMax:max-w-full w-full flex flex-col justify-center items-center">
-            <p className="text-website-blackBlue text-[52px] xsMax:text-[42px] text-center font-dancing font-extrabold w-full">{heading}</p>
+            <p className="text-website-blackBlue text-[52px] xsMax:text-[40px] text-center font-sail leading-[45px] w-full">{heading}</p>
             {/* //*Date */}
-            <p className="text-[#9a3e27] text-[32px] xsMax:text-[27px] text-center font-palyfair font-medium">{date}</p>
+            <p className="text-[#9a3e27] text-[32px] xsMax:text-[28px] text-center font-sail font-medium">{date}</p>
 
             {/* //*Image */}
             <div className="relative xsMax:mt-[-25px]">
@@ -40,7 +40,7 @@ export const SingleCard = ({ heading = 'We Fall in Love', date = "July 20, 2020"
                                 alt="Picture of the author"
                                 className="w-full rounded-full h-full"
                             /> :
-                            <video autoPlay controls muted loop style={{width:'240px', height:'240px', objectFit: 'cover',borderRadius:'100%' }}  >
+                            <video autoPlay controls muted loop style={{ width: '240px', height: '240px', objectFit: 'cover', borderRadius: '100%' }}  >
                                 <source src="/video/oneVideo.mp4" />
                             </video>
                     }

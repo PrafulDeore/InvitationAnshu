@@ -7,11 +7,9 @@ import 'aos/dist/aos.css'
 // @ts-ignore
 import AOS from 'aos'
 // @ts-ignore
-import BannerImage1 from '../public/Images/BannerImage.jpeg'
-// @ts-ignore
 import BannerImage2 from '../public/Images/banerTwo.JPEG'
 // @ts-ignore
-import Song from '../public/Music/navriNavra.wav'
+import Song from '../public/Music/shusshaDesi.wav'
 import { SingleCard } from './Componets/singleCard'
 import { CountdownTimer } from './Componets/Time/time'
 import flowerBG from '../public/Images/flowerBG.png'
@@ -28,6 +26,12 @@ import BackWaters from '../public/Images/backWaters.JPEG'
 import BauliDam from '../public/Images/bauliDam.JPEG'
 import Enga from '../public/Images/e56.jpeg'
 import ShubhVivah from '../public/Images/shubhaVivah.jpg'
+import Cartton1 from '../public/Images/CarttonImages/cartoon11.jpg'
+import Cartton2 from '../public/Images/CarttonImages/Cartoon2.png'
+import Cartoon3 from '../public/Images/CarttonImages/Cartton3.png'
+import Cartoon4 from '../public/Images/CarttonImages/Cartoon4.png'
+
+import map from '../public/Images/CarttonImages/AnShu.png'
 
 const Home = () => {
   useEffect(() => {
@@ -72,7 +76,7 @@ const Home = () => {
             <p className="!font-dancing text-[40px] text-white  tracking-[0.8px] text-center xsMax:text-[30px] ">
               We are getting married
             </p>
-            <p className="text-[52px] xsMax:text-[42px] text-white font-ExoFont font-semibold">
+            <p className="text-[52px] xsMax:text-[42px] text-white font-ExoFont text font-semibold">
               Anjor & Praful
             </p>
             <p className="text-[28px] xsMax:text-[28px] text-white font-dancing font-extrabold">
@@ -130,8 +134,8 @@ const Home = () => {
                 data-aos-duration="600"
               >
                 <div className='relative w-full flex justify-center '>
-                  <div className='absolute top-[-35px] z-[-1]  w-[60%] flex justify-center items-center '>
-                    <div>
+                  <div className='absolute top-[-25px] z-[-1]  w-[35%] flex justify-center items-center '>
+                    <>
 
                       <Image
                         src={flowerBG}
@@ -139,12 +143,12 @@ const Home = () => {
                         alt="Picture of the author"
                         className="w-full"
                       />
-                    </div>
+                    </>
                   </div>
                   <div className='z-10 '>
 
                     <p className="text-[65px]  text-left text-website-red
-                 xsMax:text-[35px]  xsMax:text-center font-palyfair font-medium mb-[40px]">
+                 xsMax:text-[35px]  xsMax:text-center font-palyfair font-medium mb-[0px]">
                       BRIDE & GROOM
                     </p>
                     <p className="text-[35px] font-palyfair mt-[20px] max-w-[80%] w-full text-website-darkBlue
@@ -155,7 +159,16 @@ const Home = () => {
                     </p>
                   </div>
                 </div>
-
+                {/* //* Cartoon Image-1 */}
+                <div className="m-auto xsMax:max-w-[250px] xsMax:h-[250px] w-full h-[350px]">
+                  <Image
+                    src={Cartton1}
+                    objectFit="cover"
+                    layout=""
+                    alt="Picture of the author"
+                    className="w-full rounded-full h-full"
+                  />
+                </div>
 
                 <p className="text-[25px] font-abolitionOblique text-website-darkBlue border-l-[2px] border-website-red mt-[50px] pl-[25px]  xsMax:pl-[15px] max-w-[80%] w-full
                 xsMax:text-center xsMax:max-w-full xsMax:mt-[25px] font-ExoFont xsMax:text-[20px]                ">
@@ -170,7 +183,7 @@ const Home = () => {
             {/* //*Section -2 */}
             <div className="pt-[200px] xsMax:pt-[100px] pb-[50px] flex flex-col justify-center items-center w-full bg-website-white ">
               <div className='relative w-full flex justify-center '>
-                <div className='absolute top-[-35px] z-[9]  w-[40%] flex justify-center items-center '>
+                <div className='absolute top-[-35px] z-[9] w-[35%] flex justify-center items-center '>
                   <Image
                     src={flowerBG}
                     objectFit="cover"
@@ -184,14 +197,23 @@ const Home = () => {
                   data-aos-offset="200"
                   data-aos-easing="ease-in-sine"
                   data-aos-duration="600"
-                  className='z-[10] text-[65px]  text-left text-website-red xsMax:text-[35px]  xsMax:text-center font-palyfair font-medium mb-[40px]'
+                  className='z-[10] text-[65px]  text-left text-website-red xsMax:text-[35px]  xsMax:text-center font-palyfair font-medium mb-[10px]'
                 >
                   OUR LOVE STORY
                 </p>
               </div>
-
+              {/* //* Cartoon Image-2 */}
+              <div className="m-auto xsMax:max-w-[250px] xsMax:h-[250px] w-full h-[350px]">
+                <Image
+                  src={Cartton2}
+                  objectFit="cover"
+                  layout=""
+                  alt="Picture of the author"
+                  className="w-full rounded-full h-full"
+                />
+              </div>
               <p
-                className="text-[25px] font-abolitionOblique text-website-darkBlue mt-[50px] pl-[25px]  xsMax:pl-[15px] max-w-[80%] w-full
+                className="text-[25px] font-abolitionOblique text-website-darkBlue mt-[50px] px-[15px]  xsMax:pl-[15px] max-w-[80%] w-full
 xsMax:text-center xsMax:max-w-full xsMax:mt-[25px] font-ExoFont xsMax:text-[20px]"
                 data-aos="fade-up"
                 data-aos-offset="100"
@@ -212,7 +234,7 @@ xsMax:text-center xsMax:max-w-full xsMax:mt-[25px] font-ExoFont xsMax:text-[20px
             </div>
 
             {/* //*Section -3 */}
-            <div className="pt-[140px] pb-[200px] xsMax:pt-[40px] xsMax:pb-[40px] flex xsMax:flex-col justify-center items-center w-full bg-[#fdf7f6] border gap-x-[40px]"            >
+            <div className="pt-[140px] pb-[200px] xsMax:pt-[40px] xsMax:pb-[0px] flex xsMax:flex-col justify-center items-center w-full bg-[#fdf7f6] border gap-x-[40px]"            >
               {/* //&Photo-1 */}
               <div
                 data-aos="fade-up"
@@ -262,7 +284,7 @@ xsMax:text-center xsMax:max-w-full xsMax:mt-[25px] font-ExoFont xsMax:text-[20px
                 data-aos-duration="600"
                 className='mt-[70px] mb-[50px]'
               >
-                <SingleCard heading='' date="June 01, 2018" image={TimeTogether} />
+                <SingleCard heading='Spending Time Together' date="June 01, 2018" image={TimeTogether} />
               </div>
 
               {/* //&Photo-6 */}
@@ -315,17 +337,34 @@ xsMax:text-center xsMax:max-w-full xsMax:mt-[25px] font-ExoFont xsMax:text-[20px
               >
                 <SingleCard heading='Yes! We got Promoted as... GF BF -> Fiancée' date="Nov 18, 2023" image={Enga} />
               </div>
+              <div className='flex w-full justify-center items-center mt-[0px]'>
 
+              <Image
+                src={Cartoon4}
+                objectFit="cover"
+                layout=""
+                alt="Picture of the author"
+                className="w-[100px] rounded-full h-full"
+                />
+                {/* <Image
+                src={Cartoon4}
+                objectFit="cover"
+                layout=""
+                alt="Picture of the author"
+                className="w-[100px] rounded-full h-full"
+                /> */}
+                </div>
             </div>
 
 
             {/* //*CountDown */}
-            <div className='py-[150px] xsMax:py-[70px] bg-website-white w-full relative'>
+            <div className='py-[150px] xsMax:py-[10px] bg-website-white w-full relative mt-[-8px]'>
               <div className='z-20 absolute w-full '>
                 <p className="text-[65px]   text-left text-website-SelectiveYellow xsMax:text-[35px]  xsMax:text-center font-palyfair font-medium mb-[40px]">
                   Day's Remaining
                 </p>
                 <CountdownTimer />
+
               </div>
               <div className="w-full  h-[850px] z-[1] before:w-full before:h-full before:bg-website-black before:opacity-[0.8] before:z-10 before:top-0 before:left-0 before:absolute">
                 <Image
@@ -336,7 +375,28 @@ xsMax:text-center xsMax:max-w-full xsMax:mt-[25px] font-ExoFont xsMax:text-[20px
                   fill={true}
                 />
               </div>
+            <div className='w-full flex justify-between items-center  z-50 sticky'>
+              <Image
+                src={Cartoon3}
+                objectFit="cover"
+                layout=""
+                alt="Picture of the author"
+                className="w-[130px] rounded-full h-full"
+              />
+
+               <p className="text-[65px] items-center  text-left text-website-white xsMax:text-[15px]  xsMax:text-center font-palyfair font-medium ">
+                  Scan me for Address
+                </p>
+              <Image
+                src={map}
+                objectFit="cover"
+                layout=""
+                alt="Picture of the author"
+                className="w-[130px] rounded-full h-full"
+              />
             </div>
+            </div>
+
           </div>
         </div>
       </div>

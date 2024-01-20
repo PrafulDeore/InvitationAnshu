@@ -59,7 +59,7 @@ export const CountdownTimer = () => {
     <div className=" flex xsMax:flex-col xsMax:items-center xsMax:gap-y-[15px] border-website-darkBlue justify-center gap-x-[50px]">
       <CountdownCircleTimer
         {...timerProps}
-        colors="#7E2E84"
+        colors="#F7BC0F"
         duration={daysDuration}
         initialRemainingTime={remainingTime}
       >
