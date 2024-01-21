@@ -32,6 +32,7 @@ import Cartoon3 from '../public/Images/CarttonImages/Cartton3.png'
 import Cartoon4 from '../public/Images/CarttonImages/Cartoon4.png'
 
 import map from '../public/Images/CarttonImages/AnShu.png'
+import UpArrow from './Componets/UpArrow'
 
 const Home = () => {
   useEffect(() => {
@@ -52,6 +53,7 @@ const Home = () => {
 
   return (
     <div className="">
+      <UpArrow/>
       <div className="relative flex flex-col justify-center items-center">
         {/* Sticky Image */}
         <div className="w-full h-[850px] fixed top-0 z-[-1] before:w-full before:h-full before:bg-website-black before:opacity-[0.5] before:z-10 before:top-0 before:left-0 before:absolute">
