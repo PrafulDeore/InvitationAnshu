@@ -67,7 +67,7 @@ const Home = () => {
             alt="Picture of the author"
             className="w-full"
             fill={true}
-          />
+          />.
         </div>
 
         {/* //* Content on top of the Image */}
