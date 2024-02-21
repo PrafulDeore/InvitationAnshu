@@ -33,8 +33,12 @@ import Cartoon4 from '../public/Images/CarttonImages/Cartoon4.png'
 
 import map from '../public/Images/CarttonImages/AnShu.png'
 import UpArrow from './Componets/UpArrow'
+import { useRouter } from 'next/router'
 
 const Home = () => {
+  const router=useRouter()
+  console.log("routerrouter",router);
+  
   useEffect(() => {
     AOS.init()
     window.scrollTo(0, 0)
