@@ -49,8 +49,6 @@ const Home = () => {
     { url: '/Images/sliderimages/img6.png' },
 
   ]
-	const  use = window.location
-console.log("useuseuse",use);
 
 
   return (
